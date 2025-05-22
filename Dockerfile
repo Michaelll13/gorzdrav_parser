@@ -18,4 +18,4 @@ RUN apt-get update && apt-get install -y wget gnupg unzip curl \
 
 COPY main5.py .
 
-CMD ["uvicorn", "main5:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
