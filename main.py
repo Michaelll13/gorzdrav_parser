@@ -85,7 +85,7 @@ async def async_search(query: str):
     return await loop.run_in_executor(executor, parse_products, query)
 
 
-@app.get("/searchnnn", response_model=List[Product])
+@app.get("/search", response_model=List[Product])
 async def search(query: str = Query(..., alias="q")):
     try:
         products = await async_search(query)
