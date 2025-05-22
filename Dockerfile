@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y wget gnupg unzip curl \
     && rm /tmp/chromedriver.zip \
     && chmod +x /usr/local/bin/chromedriver
 
-COPY main5.py .
+COPY main.py .
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
