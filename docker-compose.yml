@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  gorzdrav-parser:
+  gorzdrav_parser:
     build: .
-    container_name: gorzdrav-parser
+    container_name: gorzdrav_parser
     ports:
       - "8003:8000"
     restart: always
